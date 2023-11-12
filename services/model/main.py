@@ -26,6 +26,8 @@ bootstrap_servers = config['kafka']['server']
 consume_topic = config['kafka']['topic']
 group_id = config['kafka']['group_id']
 
+print(f'Kafka bootstrap-servers {bootstrap_servers} and topic {consume_topic}')
+
 consumer = KafkaConsumer(consume_topic,
                         group_id=group_id,
                         bootstrap_servers=bootstrap_servers,
