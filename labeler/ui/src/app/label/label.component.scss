@@ -1,0 +1,48 @@
+:host {
+
+  align-items: center;
+
+  .header {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border-bottom: 2px solid #eee;
+    z-index: 9;
+  }
+
+  .content {
+    max-width: 80%;
+    margin: auto;
+    // margin-top: 30px;
+    padding: 30px;
+  }
+
+  .card-header {
+    font-weight: 700;
+
+    p {
+      margin: 0;
+    }
+
+    .file {
+      font-weight: normal;
+    }
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .badge {
+    margin-top: 16px;
+    margin-right: 20px;
+  }
+
+  .footer {
+    margin-left: 40%;
+  }
+}

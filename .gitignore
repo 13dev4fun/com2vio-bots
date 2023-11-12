@@ -128,3 +128,21 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+*/**/config.yml
+
+.DS_Store
+
+# angular app
+.angular
+.mvn
+
+# python
+__pycache__/
+ft-model/
+
+.vscode/
+.editorconfig
+
+.idea/
