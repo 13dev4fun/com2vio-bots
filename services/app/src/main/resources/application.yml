@@ -1,0 +1,25 @@
+server:
+  port: 9086
+
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      auto-offset-reset: latest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/com2vio-bot
+    username: root
+    password: root
+
+github:
+  host: https://github.com
+  endpoint: https://api.github.com
+  token: your-token
+
+repos:
+  dir: ./repos
